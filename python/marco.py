@@ -2,9 +2,6 @@
 from enum import Enum
 
 
-CONFIG_FILE = "File.txt"
-
-
 class Exception(Enum):
     """异常返回信息"""
     LACK_ARGVS_ERROR = "缺少参数"
@@ -16,3 +13,8 @@ class Exception(Enum):
 class Attribute(Enum):
     """属性类"""
     ATTRIBUTES = ["CreationTime", "LastAccessTime", "AllocationSize", "EndOfFile", "ReadOnly", "Hide", "AllAttributes"]
+
+
+class CheckFileType(Enum):
+    File = "File.txt"
+    Files = "Files.txt"
